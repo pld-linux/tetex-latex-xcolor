@@ -25,7 +25,7 @@ table row colors.
 
 %description -l pl
 `xcolor' dostarcza ³atwego, niezale¿nego od urz±dzenia dostêpu do wielu
-rodzaji cieniowania, tonów i po³±czeñ dowolnych kolorów. Pozwala na wybór
+rodzai cieniowania, tonów i po³±czeñ dowolnych kolorów. Pozwala na wybór
 modelu koloru dla ca³ego dokumentu i oferuje narzêdzia dla schematów
 kolorów, konwersji miêdzy o¶mioma modelami kolorów oraz naprzemiennych
 kolorów w tabelach.
