@@ -40,13 +40,13 @@ kolorów w tabelach.
 Summary:	Example files for the LaTeX xcolor package
 Summary(pl):	Pliki przyk³adowe pakietu xcolor dla LaTeX-a
 Group:		Applications/Publishing/TeX
-Requires:       %{name} = %{version}-%{release}
+Requires:	%{name} = %{version}-%{release}
 
 %description examples
 Example files for the LaTeX xcolor package.
 
 %description -l pl examples
-Pliki przyk³adowe pakietu xcolor dla LaTeX-a.
+Pliki przyk³adowe pakietu xcolor dla LaTeXa.
 
 %prep
 %setup -q -n %{short_name}
@@ -84,4 +84,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/texmf/tex/latex/%{short_name}
 
 %files examples
+%defattr(644,root,root,755)
 %{_examplesdir}/%{name}-%{version}
