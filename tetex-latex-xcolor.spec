@@ -5,12 +5,12 @@
 Summary:	Allows for access to color tints, shades, tones etc
 Summary(pl):	Pozwala na dostêp do odcieni, gradientów itp.
 Name:		tetex-latex-xcolor
-Version:	1.09
+Version:	1.10
 Release:	1
 License:	LaTeX Project Public License
 Group:		Applications/Publishing/TeX
 Source0:	http://dl.sourceforge.net/latex-beamer/%{short_name}-%{version}.tar.gz
-# Source0-md5:	3cad987433e217e11d76a206ea3b53f3
+# Source0-md5:	1ad338e29dcf62a30df3d770833a8b43
 Requires:	tetex-latex
 Requires:	tetex-latex-carlisle
 Requires(post,postun):	/usr/bin/texhash
