@@ -3,6 +3,7 @@
 %define	texhash	[ ! -x %{_bindir}/texhash ] || %{_bindir}/texhash 1>&2 ;
 
 Summary:	Allows for access to color tints, shades, tones etc
+Summary(pl):	Pozwala na dostêp do odcieni, gradientów itp.
 Name:		tetex-latex-xcolor
 Version:	1.09
 Release:	1
@@ -18,9 +19,16 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 `xcolor' provides easy driver-independent access to several kinds of
 color tints, shades, tones, and mixes of arbitrary colors. It allows to
-select a document- wide target color model and offers tools for automatic
+select a document-wide target color model and offers tools for automatic
 color schemes, conversion between eight color models, and alternating
 table row colors.
+
+%description -l pl
+`xcolor' dostarcza ³atwego, niezale¿nego od urz±dzenia dostêpu do wielu
+rodzaji cieniowania, tonów i po³±czeñ dowolnych kolorów. Pozwala na wybór
+modelu koloru dla ca³ego dokumentu i oferuje narzêdzia dla schematów
+kolorów, konwersji miêdzy o¶mioma modelami kolorów oraz naprzemiennych
+kolorów w tabelach.
 
 %prep
 %setup -q -n %{short_name}
