@@ -17,7 +17,9 @@ Requires:	tetex-latex-carlisle
 Requires(post,postun):	/usr/bin/texhash
 BuildRequires:	tetex-dvips
 BuildRequires:	tetex-format-pdflatex
+BuildRequires:	tetex-latex-ams
 BuildRequires:	tetex-latex-carlisle
+BuildRequires:	tetex-metafont
 BuildRequires:	tetex-tex-misc
 BuildRequires:	tetex-tex-pstricks
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -55,12 +57,23 @@ cp %{SOURCE1} .
 %build
 latex xcolor.ins
 
-pdflatex xcolor1.tex
+latex xcolor.dtx
+latex xcolor.dtx
+makeindex -s gind.ist xcolor.idx
+latex xcolor.dtx
+latex xcolor.dtx
+dvipdf xcolor.dvi
+
+# Missing BR (?):
+# Font TS1/cmss/m/n/8=tcss0800 at 8.0pt not loadable: Metric (TFM) file not found.
+# latex xcolor1.tex
+# dvipdf xcolor1.dvi
+
 latex xcolor2.tex
 dvipdf xcolor2.dvi
-pdflatex xcolor3.tex
-pdflatex xcolor.dtx
-pdflatex xcolor.dtx
+
+latex xcolor3.tex
+dvipdf xcolor3.dvi
 
 %install
 rm -rf $RPM_BUILD_ROOT
