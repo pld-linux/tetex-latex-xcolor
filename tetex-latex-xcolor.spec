@@ -6,7 +6,7 @@ Summary:	Allows for access to color tints, shades, tones etc
 Summary(pl):	Pozwala na dostêp do odcieni, gradientów itp.
 Name:		tetex-latex-xcolor
 Version:	2.00
-Release:	1
+Release:	2
 License:	LaTeX Project Public License
 Group:		Applications/Publishing/TeX
 Source0:	http://dl.sourceforge.net/latex-beamer/%{short_name}-%{version}.tar.gz
@@ -22,6 +22,7 @@ BuildRequires:	tetex-latex-carlisle
 BuildRequires:	tetex-metafont
 BuildRequires:	tetex-tex-misc
 BuildRequires:	tetex-tex-pstricks
+BuildRequires:	tetex-makeindex
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
