@@ -24,6 +24,8 @@ BuildRequires:	tetex-metafont
 BuildRequires:	tetex-tex-misc
 BuildRequires:	tetex-tex-pstricks
 BuildRequires:	tetex-makeindex
+# for dvipdf
+BuildRequires:	ghostscript
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
