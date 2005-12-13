@@ -17,6 +17,7 @@ Requires:	tetex-latex-carlisle
 Requires(post,postun):	/usr/bin/texhash
 BuildRequires:	tetex-dvips
 BuildRequires:	tetex-format-pdflatex
+BuildRequires:	tetex-format-latex
 BuildRequires:	tetex-latex-ams
 BuildRequires:	tetex-latex-carlisle
 BuildRequires:	tetex-metafont
