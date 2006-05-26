@@ -51,7 +51,7 @@ Requires:	%{name} = %{version}-%{release}
 %description examples
 Example files for the LaTeX xcolor package.
 
-%description -l pl examples
+%description examples -l pl
 Pliki przyk³adowe pakietu xcolor dla LaTeXa.
 
 %prep
