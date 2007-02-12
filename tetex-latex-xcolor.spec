@@ -3,7 +3,7 @@
 %define	texhash	[ ! -x %{_bindir}/texhash ] || %{_bindir}/texhash 1>&2 ;
 
 Summary:	Allows for access to color tints, shades, tones etc
-Summary(pl.UTF-8):   Pozwala na dostęp do odcieni, gradientów itp.
+Summary(pl.UTF-8):	Pozwala na dostęp do odcieni, gradientów itp.
 Name:		tetex-latex-xcolor
 Version:	2.00
 Release:	2
@@ -44,7 +44,7 @@ kolorów w tabelach.
 
 %package examples
 Summary:	Example files for the LaTeX xcolor package
-Summary(pl.UTF-8):   Pliki przykładowe pakietu xcolor dla LaTeX-a
+Summary(pl.UTF-8):	Pliki przykładowe pakietu xcolor dla LaTeX-a
 Group:		Applications/Publishing/TeX
 Requires:	%{name} = %{version}-%{release}
 
