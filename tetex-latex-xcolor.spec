@@ -3,7 +3,7 @@
 %define	texhash	[ ! -x %{_bindir}/texhash ] || %{_bindir}/texhash 1>&2 ;
 
 Summary:	Allows for access to color tints, shades, tones etc
-Summary(pl):	Pozwala na dostêp do odcieni, gradientów itp.
+Summary(pl.UTF-8):   Pozwala na dostÄ™p do odcieni, gradientÃ³w itp.
 Name:		tetex-latex-xcolor
 Version:	2.00
 Release:	2
@@ -35,24 +35,24 @@ select a document-wide target color model and offers tools for automatic
 color schemes, conversion between eight color models, and alternating
 table row colors.
 
-%description -l pl
-`xcolor' dostarcza ³atwego, niezale¿nego od urz±dzenia dostêpu do wielu
-rodzai cieniowania, tonów i po³±czeñ dowolnych kolorów. Pozwala na wybór
-modelu koloru dla ca³ego dokumentu i oferuje narzêdzia dla schematów
-kolorów, konwersji miêdzy o¶mioma modelami kolorów oraz naprzemiennych
-kolorów w tabelach.
+%description -l pl.UTF-8
+`xcolor' dostarcza Å‚atwego, niezaleÅ¼nego od urzÄ…dzenia dostÄ™pu do wielu
+rodzai cieniowania, tonÃ³w i poÅ‚Ä…czeÅ„ dowolnych kolorÃ³w. Pozwala na wybÃ³r
+modelu koloru dla caÅ‚ego dokumentu i oferuje narzÄ™dzia dla schematÃ³w
+kolorÃ³w, konwersji miÄ™dzy oÅ›mioma modelami kolorÃ³w oraz naprzemiennych
+kolorÃ³w w tabelach.
 
 %package examples
 Summary:	Example files for the LaTeX xcolor package
-Summary(pl):	Pliki przyk³adowe pakietu xcolor dla LaTeX-a
+Summary(pl.UTF-8):   Pliki przykÅ‚adowe pakietu xcolor dla LaTeX-a
 Group:		Applications/Publishing/TeX
 Requires:	%{name} = %{version}-%{release}
 
 %description examples
 Example files for the LaTeX xcolor package.
 
-%description examples -l pl
-Pliki przyk³adowe pakietu xcolor dla LaTeXa.
+%description examples -l pl.UTF-8
+Pliki przykÅ‚adowe pakietu xcolor dla LaTeXa.
 
 %prep
 %setup -q -n %{short_name}
